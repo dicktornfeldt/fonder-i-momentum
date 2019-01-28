@@ -44,7 +44,6 @@ function Table() {
               url.id
             }`
           ).then(response => {
-            console.log(response);
             return response.json();
           })
         )

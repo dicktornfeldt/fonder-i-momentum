@@ -55,7 +55,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <FondContext.Provider value={{ state, dispatch }}>
           <main>
-            <H1>Fondurval - Global tillgångsallokering</H1>
+            <H1>Fondlistan - Global tillgångsallokering</H1>
             <H2>
               Den ursprungliga fondlistan kommer från{' '}
               <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FondSmurfen">

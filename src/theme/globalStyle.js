@@ -74,9 +74,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .ReactTable .rt-thead .rt-th {    padding: .7rem .5rem !important;  }  
+  .ReactTable .rt-thead .rt-th:focus {    outline: none;  }  
   .ReactTable .rt-td {    padding: 1.2rem .5rem 0 .5rem !important;    line-height: 1;  }  
   .ReactTable .rt-td:first-child {    padding: 1.2rem .5rem 0 1rem !important;  }  
   .ReactTable .rt-td:last-child {    padding: .6rem .5rem .6rem .5rem !important;  }  
-  .ReactTable .rt-thead .rt-th.-sort-desc, .ReactTable .rt-thead .rt-td.-sort-desc {    box-shadow: inset 0 -3px 0 0 #25CCF7 !important;  }
+  .ReactTable .rt-thead .rt-th.-sort-desc {    box-shadow: inset 0 -3px 0 0 #25CCF7 !important;  }
 
+  .ReactTable .rt-thead .rt-th.-sort-asc {    box-shadow: inset 0 3px 0 0 palevioletred !important;  }
 `;

@@ -4,8 +4,11 @@ import { FondContext } from './App';
 import { Button } from './theme/theme';
 
 const Wrapper = styled.div`
-  margin: 0 2rem 0 0;
-  display: inline-block;
+  margin: 0 0 2.8rem 0;
+  @media (min-width: 600px) {
+    margin: 0 2rem 0 0;
+    display: inline-block;
+  }
 `;
 
 const Input = styled.input`

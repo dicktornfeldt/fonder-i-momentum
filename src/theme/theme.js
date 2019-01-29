@@ -29,5 +29,8 @@ export const Button = styled.button`
     props.smalldanger &&
     css`
       background: palevioletred;
+      &:hover {
+        background-color: #ff83ac;
+      }
     `};
 `;

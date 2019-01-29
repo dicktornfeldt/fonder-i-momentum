@@ -8,9 +8,12 @@ import { Button } from './theme/theme';
 import LoadingIcon from './images/audio.svg';
 
 const Wrapper = styled.div`
-  max-width: 101rem;
-  margin: auto;
+  max-width: 90%;
+  margin: auto auto 4rem auto;
   background-color: white;
+  @media (min-width: 1200px) {
+    max-width: 101rem;
+  }
 `;
 
 const Loading = styled.div`
@@ -44,10 +47,20 @@ function Table() {
               url.id
             }`
           ).then(response => {
+            if (response.status !== 200) {
+              return 'kill';
+            }
+
             return response.json();
           })
         )
       );
+
+      if (data.slice(-1)[0] === 'kill') {
+        alert('Hoppsan, hittade inte den fonden');
+        dispatch({ type: 'restart' });
+      }
+
       setData(data);
       setLoading(false);
     } catch (error) {

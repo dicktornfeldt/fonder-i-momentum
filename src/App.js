@@ -15,11 +15,25 @@ const H1 = styled.h1`
   color: ${props => props.theme.primarycolor};
   font-size: 2.7rem;
   text-align: center;
-  margin: 5rem 0 0 0;
+  margin: 3rem 0 0 0;
+  @media (min-width: 600px) {
+    margin: 5rem 0 0 0;
+  }
+`;
+
+const H2 = styled.h2`
+  color: #007e9e;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  a {
+    color: #007e9e;
+  }
 `;
 
 const Wrapper = styled.section`
-  margin: 3rem auto 2.7rem auto;
+  margin: 4rem auto 2.7rem auto;
   text-align: center;
 `;
 
@@ -42,6 +56,13 @@ function App() {
         <FondContext.Provider value={{ state, dispatch }}>
           <main>
             <H1>Fondurval - Global tillgångsallokering</H1>
+            <H2>
+              Den ursprungliga fondlistan kommer från{' '}
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FondSmurfen">
+                @FondSmurfen
+              </a>{' '}
+              på Twitter.
+            </H2>
             <Wrapper>
               <Add />
               <Restart />

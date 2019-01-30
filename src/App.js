@@ -16,12 +16,13 @@ const H1 = styled.h1`
   font-size: 2.7rem;
   text-align: center;
   margin: 3rem 0 0 0;
+  text-transform: uppercase;
   @media (min-width: 600px) {
     margin: 5rem 0 0 0;
   }
   span {
     position: relative;
-    top: 0.3rem;
+    top: 0.2rem;
     left: 0.4rem;
   }
 `;

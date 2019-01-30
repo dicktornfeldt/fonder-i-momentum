@@ -19,6 +19,11 @@ const H1 = styled.h1`
   @media (min-width: 600px) {
     margin: 5rem 0 0 0;
   }
+  span {
+    position: relative;
+    top: 0.3rem;
+    left: 0.4rem;
+  }
 `;
 
 const H2 = styled.h2`
@@ -55,7 +60,12 @@ function App() {
       <ThemeProvider theme={theme}>
         <FondContext.Provider value={{ state, dispatch }}>
           <main>
-            <H1>Fondlistan - Global tillgångsallokering</H1>
+            <H1>
+              Fonder i momentum{' '}
+              <span aria-label="heart" role="img">
+                📈
+              </span>
+            </H1>
             <H2>
               Den ursprungliga fondlistan kommer från{' '}
               <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/FondSmurfen">

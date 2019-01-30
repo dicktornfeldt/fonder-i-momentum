@@ -13,12 +13,13 @@ export const FondContext = React.createContext();
 
 const H1 = styled.h1`
   color: ${props => props.theme.primarycolor};
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 3rem 0 0 0;
   text-transform: uppercase;
   @media (min-width: 600px) {
     margin: 5rem 0 0 0;
+    font-size: 2.7rem;
   }
   span {
     position: relative;

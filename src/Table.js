@@ -43,7 +43,7 @@ function Table() {
       const data = await Promise.all(
         state.map(url =>
           fetch(
-            `https://limitless-garden-26844.herokuapp.com/https://www.avanza.se/_mobile/market/fund/${
+            `https://cors-anywhere.herokuapp.com/https://www.avanza.se/_mobile/market/fund/${
               url.id
             }`
           ).then(response => {

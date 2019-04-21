@@ -141,7 +141,7 @@ function Table() {
         ]}
         defaultSorted={[
           {
-            id: 'momentum',
+            id: 'priceThreeMonthsAgo',
             desc: true,
           },
         ]}

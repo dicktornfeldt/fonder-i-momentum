@@ -1,16 +1,18 @@
 const initialState = [
-  { id: '350' },
-  { id: '899033' },
-  { id: '464' },
-  { id: '2111' },
-  { id: '471796' },
-  { id: '94867' },
-  { id: '181108' },
-  { id: '789175' },
-  { id: '666676' },
-  { id: '596635' },
-  { id: '2008' },
-  { id: '1933' },
+  { id: '350' }, // LF fastighetsfond
+  { id: '899033' }, // danske invest select usd
+  { id: '464' }, // handelsbanken hälso
+  { id: '206' }, // swedbank robur access mix
+  { id: '2111' }, // amf räntefond lång
+  { id: '471796' }, // spiltan högreäntefond
+  { id: '94867' }, // spiltan realräntefond
+  { id: '181108' }, // LF usa indexnära
+  { id: '666676' }, // pacific precious
+  { id: '596635' }, // robur access asien
+  { id: '255288' }, // handelsbanken realräntefond
+  { id: '321692' }, // dnb finans
+  { id: '1933' }, // ny teknink
+  { id: '2801' }, // amf aktiefond småbolag
 ];
 
 function appReducer(state, action) {

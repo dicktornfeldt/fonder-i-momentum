@@ -7,7 +7,7 @@ const initialState = [
   { id: '471796' }, // spiltan högreäntefond
   { id: '94867' }, // spiltan realräntefond
   { id: '181108' }, // LF usa indexnära
-  { id: '666676' }, // pacific precious
+  { id: '907817' }, // HB Råvaru
   { id: '596635' }, // robur access asien
   { id: '255288' }, // handelsbanken realräntefond
   { id: '321692' }, // dnb finans
